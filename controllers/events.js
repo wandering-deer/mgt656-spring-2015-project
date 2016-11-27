@@ -60,6 +60,18 @@ function saveEvent(request, response){
   if (validator.isLength(request.body.title, 5, 50) === false) {
     contextData.errors.push('Your title should be between 5 and 100 letters.');
   }
+  
+  if (validator.isInt(request.body.year) === false) {
+    contextData.errors.push('Your year should be an integer.');
+  }
+  
+  if (validator.isInt(request.body.year) === false) {
+    contextData.errors.push('Your year should be an integer.');
+  }
+  var year = parseInt(request.body.year,10);
+  if (year > 2016 || year <2015) {
+    contextData.errors.push('Your year should be in the range of 2015-2016.');
+  }
 
 
   if (contextData.errors.length === 0) {
