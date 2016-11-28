@@ -13,29 +13,31 @@
     </div>
   {% endif %}
 
+<br>
+
 	<form id="create-event" method="POST">
-    <label for="title">Event title:</label>
+    <label for="title">Event Title:</label>
     <input type="text" id= "title" name="title">
     
     <br>
 
 
-    <label for="location">Event location:</label>
+    <label for="location">Event Location:</label>
     <input type="text" id="location" name="location">
     
     <br>
 
-    <label for="image">Event image:</label>
-    <input type="url" id="image" name="image">
+    <label for="image">Event Image:</label>
+    <input type="url" id="image" class="form-control" name="image">
     
     <br>
   
-    <label for="year">Event year:</label>
+    <label for="year">Event Year:</label>
     <input type="text" id="year" name="year">
     
     <br>
 
-    <label for="month">Event month:</label>
+    <label for="month">Event Month:</label>
     <select name="month" id="month" class="form-control" style="width: 250px;">
       <option value='0'>January</option>
       <option value='1'>February</option>
@@ -52,7 +54,7 @@
 
     </select><br>
     
-    <label for="day">Event day:</label>
+    <label for="day">Event Day:</label>
     <select name="day" id="day" class="form-control" style="width: 250px;">
       <option value='0'>01</option>
       <option value='1'>02</option>
@@ -88,7 +90,7 @@
       
     </select><br>
 
-    <label for="hour">Event hour:</label>
+    <label for="hour">Event Hour:</label>
     <select name="hour" id="hour" class="form-control" style="width: 250px;">
       <option value='0'>00</option>
       <option value='1'>01</option>
@@ -106,7 +108,7 @@
       </select>
 
 
-    <label for="minute">Event minute:</label>
+    <label for="minute">Event Minute:</label>
     <select name="minute" id="minute" class="form-control" style="width: 250px;">
       <option value='0'>00</option>
       <option value='1'>30</option>
